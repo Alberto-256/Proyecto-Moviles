@@ -4,78 +4,128 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BarraNavegacion"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
-            android:id="@+id/bottomNav"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#FFFFFF"
-            android:elevation="10dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="5dp">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bnCalen"
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bg_circle_blue" />
+
+            <TextView
+                android:id="@+id/textView6"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFF"
+                android:paddingTop="3dp"
                 android:text="Calendario"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="#3178B5"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
+        </LinearLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bnCalen2"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bg_circle_blue" />
+
+            <TextView
+                android:id="@+id/textView5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFF"
+                android:paddingTop="3dp"
                 android:text="Rutinas"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="#3178B5"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
+        </LinearLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bnCalen3"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bg_circle_blue" />
+
+            <TextView
+                android:id="@+id/textView4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFF"
+                android:paddingTop="3dp"
                 android:text="Notas"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="#3178B5"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/bnCalen4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:backgroundTint="#FFFF"
-                android:text="Mas"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#3178B5"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
         </LinearLayout>
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bg_circle_blue" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="Más"
+                android:textAlignment="center"
+                android:textColor="#3178B5"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
