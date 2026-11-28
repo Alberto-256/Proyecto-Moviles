@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">16dp</dimen>
+    <dimen name="space_l">24dp</dimen>
+    <dimen name="radius_field">12dp</dimen>
+    <dimen name="radius_card">14dp</dimen>
+    <dimen name="radius_sheet">24dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="day_cell_height">64dp</dimen>
+    <dimen name="day_circle">36dp</dimen>
+    <dimen name="dot_size">6dp</dimen>
+    <dimen name="routine_dot">10dp</dimen>
+</resources>

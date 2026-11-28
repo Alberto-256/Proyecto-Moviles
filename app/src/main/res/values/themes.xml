@@ -1,9 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Calendario" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.RutinApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/primary_dark</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOutline">@color/border</item>
+        <item name="colorError">@color/danger</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Estilos -->
+        <item name="materialButtonStyle">@style/Widget.RutinApp.Button</item>
+        <item name="textInputStyle">@style/Widget.RutinApp.TextField</item>
+        <item name="materialCardViewStyle">@style/Widget.RutinApp.Card</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.RutinApp.BottomSheetDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.RutinApp.AlertDialog</item>
     </style>
 
-    <style name="Theme.Calendario" parent="Base.Theme.Calendario" />
+    <style name="ThemeOverlay.RutinApp.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.RutinApp.BottomSheet</item>
+    </style>
+    <style name="Widget.RutinApp.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.RutinApp.Sheet</item>
+    </style>
+
+    <style name="ThemeOverlay.RutinApp.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.RutinApp</item>
+    </style>
+    <style name="MaterialAlertDialog.RutinApp" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.RutinApp.Dialog</item>
+        <item name="backgroundTint">@color/surface</item>
+    </style>
+
+    <style name="ShapeAppearance.RutinApp.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/radius_sheet</item>
+        <item name="cornerSizeTopRight">@dimen/radius_sheet</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+    <style name="ShapeAppearance.RutinApp.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
 </resources>
